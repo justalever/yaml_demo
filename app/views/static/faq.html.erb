@@ -1,0 +1,9 @@
+<div class="max-w-3xl mx-auto">
+  <h1 class="font-bold text-3xl mb-6">FAQs</h1>
+  <% @faqs.each do |faq| %>
+    <details class="p-3 rounded border mb-6">
+      <summary class="font-semibold"><%= faq['question'] %></summary>
+      <div><%= faq['answer'] %></div>
+    </details>
+  <% end %>
+</div>
